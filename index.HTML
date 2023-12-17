@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethiopian cultural clothes</title>
+    <style>
+      h1 {
+        color: #87683b;
+        text-align: center;
+      }
+      h2 {
+        color: red;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 12px;
+        border-radius: 6px;
+        background: blueviolet;
+        color: white;
+        transition: all, 200ms, ease-in-out;
+      }
+      button:hover {
+        color: blueviolet;
+        cursor: pointer;
+
+        background: white;
+      }
+      span {
+        width: 24px;
+        padding: 24px;
+        margin: 0 auto;
+      }
+      div {
+        margin: 12px;
+      }
+      body {
+        background: linear-gradient(
+          87.4deg,
+          rgb(255, 241, 165) 1.9%,
+          rgb(200, 125, 76) 49.7%,
+          rgb(83, 54, 54) 100.5%
+        );
+      }
+      p {
+        color: black;
+      }
+      img {
+        width: 300px;
+        height: 350px;
+        display: inline;
+        margin: 0 auto;
+        padding: 12px 120px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Do you want to own one of the most beautiful cultural clothes in the
+      world?
+    </h1>
+    <h2>Ethipian cultural clothes</h2>
+    <span
+      ><img
+        src="https://ethiopianclothing.net/cdn/shop/products/il_1df140xN_1024x1024.jpg?v=1680196428"
+        alt="cultural cloth"
+      />
+      <img
+      src=https://ethiopiantraditionaldress.com/wp-content/uploads/2022/08/Men-Habesha-Clothing-819x1024.webp
+      alt="cultural cloth" />
+    </span>
+    <hr />
+    <p>
+      By booking an appointment now, you can order these cultural dresses with
+      lots of other designs for both <em>men</em> and <em>women</em>. To book an
+      appointment click the button below. We will contact you with professional
+      designers.
+    </p>
+    <div>
+      <a
+        href="https://ethiopianclothing.net/collections/ethiopian-womens-clothing"
+        target="_blank"
+        >Explore variety of designs</a
+      >
+    </div>
+    <button><strong>Book now</strong></button> <br />
+    <script>
+      function contactUs() {
+        let name = prompt("what is your name?");
+        let contact = prompt("Enter your email please");
+        let country = prompt("enter your country");
+        if ((country = "ethiopia")) {
+          let phoneNumber = prompt(
+            "Tena yistilin, enter your phone number so we can contact you"
+          );
+        } else {
+          let phoneNumber = prompt(
+            "Enter your phone number so we can contact you"
+          );
+        }
+        alert("we will contact you soon.");
+      }
+      let bookButton = document.querySelector("button");
+      bookButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
